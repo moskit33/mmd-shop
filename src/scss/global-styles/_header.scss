@@ -1,0 +1,15 @@
+.header{
+    background: $color-red;
+    &_nav-tools{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &_nav-left{
+
+    }
+    &_nav-right{
+
+    }
+}

@@ -1,0 +1,38 @@
+$font-names: (
+    300: 'ubuntu_light',
+    400: 'ubuntu_regular',
+    500: 'ubuntu_medium',
+    700: 'ubuntu_bold',
+);
+
+$font-names-myriadpro: (
+    300: 'MyriadPro-Light',
+    400: 'MyriadPro-Regular',
+    500: 'MyriadPro-Semibold',
+    700: 'MyriadPro-Bold',
+    900: 'MyriadPro-Black',
+);
+
+@each $key in map-keys($font-names) {
+    $value: map-get($font-names, $key);
+    @font-face {
+        font-family: 'Ubuntu';
+        src: url('../fonts/#{$value}.woff2') format('woff2'),
+             url('../fonts/#{$value}.woff') format('woff'),
+             url('../fonts/#{$value}.ttf') format('truetype');
+        font-weight: $key;
+        font-style: normal;
+    }
+}
+
+@each $key in map-keys($font-names-myriadpro) {
+    $value: map-get($font-names-myriadpro, $key);
+    @font-face {
+        font-family: 'MyriadPro';
+        src: url('../fonts/#{$value}.woff2') format('woff2'),
+             url('../fonts/#{$value}.woff') format('woff'),
+             url('../fonts/#{$value}.ttf') format('truetype');
+        font-weight: $key;
+        font-style: normal;
+    }
+}
