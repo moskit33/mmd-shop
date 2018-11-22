@@ -104,8 +104,8 @@ span {
 
 .container {
     width: 100%;
-    max-width: 1550px;
-    padding: 0 10px;
+    max-width: 1560px;
+    padding: 0 15px;
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
@@ -113,7 +113,7 @@ span {
 }
 
 .row {
-    margin: 0 -10px;
+    margin: 0 -15px;
 }
 
 .col-1,
@@ -186,5 +186,5 @@ span {
 .col-xl-12,
 .col-xl,
 .col-xl-auto {
-    padding: 0 10px;
+    padding: 0 15px;
 }

@@ -10,18 +10,212 @@
 
 <body>
     <header class="header">
+        <div class="header_circle-wrap">
+            <div class="header_circle"></div>
+        </div>
         <div class="container">
             <nav class="header_nav-tools">
-                <div class="valign-wrap">
-                    
+                <div class="valign-wrap region-block">
+                    <button id="region-btn" type="button" class="header_nav-region valign-wrap">
+                        Ваш город
+                    </button>
+                    <div class="valign-wrap region-popup" id="region-popup">
+                        <input type="text" class="region-input" placeholder="Ваш город Москва?">
+                        <button type="button" class="region-btn">Да</button>
+                        <button type="button" class="region-btn">Нет</button>
+                    </div>
                 </div>
                 <div class="valign-wrap">
+                    <button type="button" class="header_nav-profile valign-wrap">
+                        Личный кабинет
+                    </button>
+                    <div class="lang-block">
+                        <button type="button" class="header_nav-lang" id="dropdownLangLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ру
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownLangLink">
+                            <a href="#" class="lang-item">Eng</a>
+                            <a href="#" class="lang-item">Fr</a>
+                        </div>
+                    </div>
                     
                 </div>
             </nav>
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Сыры                                                  
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Оплата</a>
+                                <a class="dropdown-item" href="#">Доставка</a>
+                                <a class="dropdown-item" href="#">Где купить</a>
+                            </div>
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Акции</a>
+                                <a class="dropdown-item" href="#">Подарочные карты</a>
+                                <a class="dropdown-item" href="#">Дегустации</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            колбасы
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Оплата</a>
+                                <a class="dropdown-item" href="#">Доставка</a>
+                                <a class="dropdown-item" href="#">Где купить</a>
+                            </div>
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Акции</a>
+                                <a class="dropdown-item" href="#">Подарочные карты</a>
+                                <a class="dropdown-item" href="#">Дегустации</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item" >
+                        <a href="#" class="menu-item-link" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            молочные деликатесы
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Оплата</a>
+                                <a class="dropdown-item" href="#">Доставка</a>
+                                <a class="dropdown-item" href="#">Где купить</a>
+                            </div>
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Акции</a>
+                                <a class="dropdown-item" href="#">Подарочные карты</a>
+                                <a class="dropdown-item" href="#">Дегустации</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item" >
+                        <a href="#" class="menu-item-link" role="button" id="dropdownMenuLink4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            шоколад
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Оплата</a>
+                                <a class="dropdown-item" href="#">Доставка</a>
+                                <a class="dropdown-item" href="#">Где купить</a>
+                            </div>
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Акции</a>
+                                <a class="dropdown-item" href="#">Подарочные карты</a>
+                                <a class="dropdown-item" href="#">Дегустации</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item" >
+                        <a href="#" class="menu-item-link" role="button" id="dropdownMenuLink5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            О компании                        
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Оплата</a>
+                                <a class="dropdown-item" href="#">Доставка</a>
+                                <a class="dropdown-item" href="#">Где купить</a>
+                            </div>
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Акции</a>
+                                <a class="dropdown-item" href="#">Подарочные карты</a>
+                                <a class="dropdown-item" href="#">Дегустации</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item" >
+                        <a href="#" class="menu-item-link" role="button" id="dropdownMenuLink6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Для покупателей
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink6">
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Оплата</a>
+                                <a class="dropdown-item" href="#">Доставка</a>
+                                <a class="dropdown-item" href="#">Где купить</a>
+                            </div>
+                            <div class="dropdown-item-col">
+                                <a class="dropdown-item" href="#">Акции</a>
+                                <a class="dropdown-item" href="#">Подарочные карты</a>
+                                <a class="dropdown-item" href="#">Дегустации</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item" >
+                        <a href="#" class="menu-item-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="cart-button">5 товаров</button>
+            </nav>
         </div>
     </header>
-    
+    <div class="main-slider">
+
+    </div>
+    <!-- <section class="section">
+        <div class="container">
+            <div class="section_title-wrap">
+                <h3 class="section_title">
+                    Искусство Ma Maison
+                </h3>
+                <div class="section_title-border"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <p class="p section_descr">
+                        Мы — компания Ma Maison, производитель традиционной гастрономии и амбассадор традиционных вкусов.
+                        Мы пригласили французских и итальянских технологов, нашли надёжных поставщиков натуральных ингредиентов, получили все необходимые сертификаты и каждый день создаём для вас лучшие в своём роде продукты.Секрет нашего успеха – в традиционном производстве и классических технологиях. Благодаря им, мы предлагаем вам самые известные французские и итальянские сыры бескомпромиссного, международно-признанного качества.
+                        В наших лавках всегда рады и гурманам, и тем, кто хочет проверить, действительно ли гастрономия может быть искусством. В любом случае, за прилавком вас будет ждать специалист по вкусам, потому что наши продукты имеет смысл пробовать, также как о них имеет смысл говорить.
+                        Мы создали Ma Maison, чтобы жить было не только вкуснее, но и интереснее. Мы постоянно находимся в поиске новых гурмэ-впечатлений и с радостью делимся с вами этими находками. Добро пожаловать в Ma Maison, и пусть наш дом станет вашим. 
+                        Повседневная практика показывает, что укрепление и развитие структуры позволяет оценить значение систем массового участия. Равным образом постоянное информационно пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. 
+                        Задача организации, в особенности же консультация с широким активом позволяет оценить значение модели развития.
+                    </p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-10 thumbnail-row">
+                    <div class="thumbnail-block">
+                        <div class="thumbnail-img">
+                            
+                        </div>
+                        <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
+                    </div>
+                    <div class="thumbnail-block">
+                        <div class="thumbnail-img">
+                            
+                        </div>
+                        <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
+                    </div>
+                    <div class="thumbnail-block">
+                        <div class="thumbnail-img">
+                            
+                        </div>
+                        <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
+                    </div>
+                    <div class="thumbnail-block">
+                        <div class="thumbnail-img">
+                            
+                        </div>
+                        <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            
+        </div>
+    </section> -->
+    <!-- <button type="button" class="button-def">Купить</button> -->
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>    
+    <script src="vendor/bootstrap-4.0.0/js/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+    <script src="vendor/slick-slider/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
