@@ -83,6 +83,7 @@
     position: relative;
     .dropdown-menu{
         display: none;
+        z-index: 50;
         position: absolute;
         width: 46px;
         right: 0!important;
@@ -145,6 +146,7 @@
         padding: 17px 0 27px;
         width: 360px;
         display: none;
+        z-index: 50;
         flex-direction: row;
         &.show{
             display: flex;
