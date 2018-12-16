@@ -9,20 +9,23 @@
 </head>
 
 <body>
-    <nav id="menu" class="menu">
-        <div>
-            MENU
+        <div id="sidebar" class="sidebar ">
+            <a href="#" class="close-sidebar close-sidebar-btn"></a>
+            <div id="sidebar-wrapper" class="sidebar-wrapper">
+                <a class="close-sidebar" href="#">Link</a>
+                <a class="close-sidebar" href="#">Link</a>
+                <a class="close-sidebar" href="#">Link</a>
+                <a class="close-sidebar" href="#">Link</a>
+            </div>
         </div>
-    </nav>
-    <main id="main" class="main-сontent panel">
         <header class="header">
             <div class="header_circle-wrap">
                 <div class="header_circle"></div>
             </div>
             <div class="container">
-                <button class="js-slideout-toggle">SLIDE</button>
                 <nav class="header_nav-tools">
                     <div class="valign-wrap region-block">
+                        <button id="toggle-sidebar" class="toggle-sidebar"></button>
                         <button id="region-btn" type="button" class="header_nav-region valign-wrap">
                             Ваш город
                         </button>
@@ -158,542 +161,549 @@
                             </a>
                         </li>
                     </ul>
-                    <button type="button" class="cart-button">5 товаров</button>
+                    <button type="button" class="cart-button"><span class="cart-button_index">5</span> товаров</button>
                 </nav>
             </div>
         </header>
-        <div class="main-slider">
-            <div class="slider-item">
-                <img class="slider-item_img" src="./uploads/main-slider-content1.jpg" alt="slider">
-                <div class="container">
-                    <div class="slider-item_content">
-                        <h3 class="slider-card_main-title">Бутик гастрономических деликатесов</h3>
-                        <div class="title-border"></div>
-                        <p class="slider-card_address">Сырная лавка №1</p>
-                        <div class="slider-card">
-                            <h5 class="slider-card_title">
-                                Булет Д’Авен
-                            </h5>
-                            <p class="slider-card_descr">
-                                <b class="bold">Тип:</b> полумягкий<br>
-                                <b class="bold">Тип молока:</b> коровье молоко<br>
-                                <b class="bold">Жирность:</b> 28 г жира на 100 г сыра<br>
-                            </p>
-                            <p class="price">210</p>
-                            <p class="price-descr">за 100 гр.</p>
-                            <button type="button" class="button-def slider-card_btn">Купить</button>
-                        </div>
-                        <div class="slider-dots-wrap"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-item">
-                <img class="slider-item_img" src="./uploads/main-slider-content1.jpg" alt="slider">
-                <div class="container">
-                        <div class="slider-item_content">
-                                <h3 class="slider-card_main-title">Бутик гастрономических деликатесов</h3>
-                                <div class="title-border"></div>
-                                <p class="slider-card_address">Сырная лавка №1</p>
-                                <div class="slider-card">
-                                    <h5 class="slider-card_title">
-                                        Булет Д’Авен
-                                    </h5>
-                                    <p class="slider-card_descr">
-                                        <b class="bold">Тип:</b> полумягкий<br>
-                                        <b class="bold">Тип молока:</b> коровье молоко<br>
-                                        <b class="bold">Жирность:</b> 28 г жира на 100 г сыра<br>
-                                    </p>
-                                    <p class="price">210</p>
-                                    <p class="price-descr">за 100 гр.</p>
-                                    <button type="button" class="button-def slider-card_btn">Купить</button>
+        <main class="main-content">
+                <div class="main-slider">
+                        <div class="slider-item">
+                            <img class="slider-item_img" src="./uploads/main-slider-content1.jpg" alt="slider">
+                            <div class="container">
+                                <div class="slider-item_content">
+                                    <h3 class="slider-card_main-title">Бутик гастрономических деликатесов</h3>
+                                    <div class="title-border"></div>
+                                    <p class="slider-card_address">Сырная лавка №1</p>
+                                    <div class="slider-card">
+                                        <h5 class="slider-card_title">
+                                            Булет Д’Авен
+                                        </h5>
+                                        <p class="slider-card_descr">
+                                            <b class="bold">Тип:</b> полумягкий<br>
+                                            <b class="bold">Тип молока:</b> коровье молоко<br>
+                                            <b class="bold">Жирность:</b> 28 г жира на 100 г сыра<br>
+                                        </p>
+                                        <p class="price">210</p>
+                                        <p class="price-descr">за 100 гр.</p>
+                                        <button type="button" class="button-def slider-card_btn">Купить</button>
+                                    </div>
+                                    <div class="slider-dots-wrap"></div>
                                 </div>
-                                <div class="slider-dots-wrap"></div>
                             </div>
-                </div>
-            </div>
-            <div class="slider-item">
-                <img class="slider-item_img" src="./uploads/main-slider-content1.jpg" alt="slider">
-                <div class="container">
-                        <div class="slider-item_content">
-                                <h3 class="slider-card_main-title">Бутик гастрономических деликатесов</h3>
-                                <div class="title-border"></div>
-                                <p class="slider-card_address">Сырная лавка №1</p>
-                                <div class="slider-card">
-                                    <h5 class="slider-card_title">
-                                        Булет Д’Авен
-                                    </h5>
-                                    <p class="slider-card_descr">
-                                        <b class="bold">Тип:</b> полумягкий<br>
-                                        <b class="bold">Тип молока:</b> коровье молоко<br>
-                                        <b class="bold">Жирность:</b> 28 г жира на 100 г сыра<br>
+                        </div>
+                        <div class="slider-item">
+                            <img class="slider-item_img" src="./uploads/main-slider-content1.jpg" alt="slider">
+                            <div class="container">
+                                    <div class="slider-item_content">
+                                            <h3 class="slider-card_main-title">Бутик гастрономических деликатесов</h3>
+                                            <div class="title-border"></div>
+                                            <p class="slider-card_address">Сырная лавка №1</p>
+                                            <div class="slider-card">
+                                                <h5 class="slider-card_title">
+                                                    Булет Д’Авен
+                                                </h5>
+                                                <p class="slider-card_descr">
+                                                    <b class="bold">Тип:</b> полумягкий<br>
+                                                    <b class="bold">Тип молока:</b> коровье молоко<br>
+                                                    <b class="bold">Жирность:</b> 28 г жира на 100 г сыра<br>
+                                                </p>
+                                                <p class="price">210</p>
+                                                <p class="price-descr">за 100 гр.</p>
+                                                <button type="button" class="button-def slider-card_btn">Купить</button>
+                                            </div>
+                                            <div class="slider-dots-wrap"></div>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img class="slider-item_img" src="./uploads/main-slider-content1.jpg" alt="slider">
+                            <div class="container">
+                                    <div class="slider-item_content">
+                                            <h3 class="slider-card_main-title">Бутик гастрономических деликатесов</h3>
+                                            <div class="title-border"></div>
+                                            <p class="slider-card_address">Сырная лавка №1</p>
+                                            <div class="slider-card">
+                                                <h5 class="slider-card_title">
+                                                    Булет Д’Авен
+                                                </h5>
+                                                <p class="slider-card_descr">
+                                                    <b class="bold">Тип:</b> полумягкий<br>
+                                                    <b class="bold">Тип молока:</b> коровье молоко<br>
+                                                    <b class="bold">Жирность:</b> 28 г жира на 100 г сыра<br>
+                                                </p>
+                                                <p class="price">210</p>
+                                                <p class="price-descr">за 100 гр.</p>
+                                                <button type="button" class="button-def slider-card_btn">Купить</button>
+                                            </div>
+                                            <div class="slider-dots-wrap"></div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="section">
+                        <div class="container">
+                            <div class="section_title-wrap">
+                                <h3 class="section_title">
+                                    Искусство Ma Maison
+                                </h3>
+                                <div class="title-border section_title-border"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-10">
+                                    <p class="p section_descr">
+                                        Мы — компания Ma Maison, производитель традиционной гастрономии и амбассадор традиционных вкусов.
+                                        Мы пригласили французских и итальянских технологов, нашли надёжных поставщиков натуральных ингредиентов, получили все необходимые сертификаты и каждый день создаём для вас лучшие в своём роде продукты.Секрет нашего успеха – в традиционном производстве и классических технологиях. Благодаря им, мы предлагаем вам самые известные французские и итальянские сыры бескомпромиссного, международно-признанного качества.
+                                        В наших лавках всегда рады и гурманам, и тем, кто хочет проверить, действительно ли гастрономия может быть искусством. В любом случае, за прилавком вас будет ждать специалист по вкусам, потому что наши продукты имеет смысл пробовать, также как о них имеет смысл говорить.
+                                        Мы создали Ma Maison, чтобы жить было не только вкуснее, но и интереснее. Мы постоянно находимся в поиске новых гурмэ-впечатлений и с радостью делимся с вами этими находками. Добро пожаловать в Ma Maison, и пусть наш дом станет вашим. 
+                                        Повседневная практика показывает, что укрепление и развитие структуры позволяет оценить значение систем массового участия. Равным образом постоянное информационно пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. 
+                                        Задача организации, в особенности же консультация с широким активом позволяет оценить значение модели развития.
                                     </p>
-                                    <p class="price">210</p>
-                                    <p class="price-descr">за 100 гр.</p>
-                                    <button type="button" class="button-def slider-card_btn">Купить</button>
                                 </div>
-                                <div class="slider-dots-wrap"></div>
+                                <div class="col-1"></div>
+                                <div class="col-1"></div>
+                                <div class="col-12 col-xl-10 thumbnail-row">
+                                    <div class="thumbnail-block">
+                                        <div class="thumbnail-img">
+                                            
+                                        </div>
+                                        <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
+                                    </div>
+                                    <div class="thumbnail-block">
+                                        <div class="thumbnail-img">
+                                            
+                                        </div>
+                                        <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
+                                    </div>
+                                    <div class="thumbnail-block">
+                                        <div class="thumbnail-img">
+                                            
+                                        </div>
+                                        <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
+                                    </div>
+                                    <div class="thumbnail-block">
+                                        <div class="thumbnail-img">
+                                            
+                                        </div>
+                                        <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
+                                    </div>
+                                </div>
+                                <div class="col-1"></div>
                             </div>
-                </div>
-            </div>
-        </div>
-        <section class="section">
-            <div class="container">
-                <div class="section_title-wrap">
-                    <h3 class="section_title">
-                        Искусство Ma Maison
-                    </h3>
-                    <div class="title-border section_title-border"></div>
-                </div>
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10">
-                        <p class="p section_descr">
-                            Мы — компания Ma Maison, производитель традиционной гастрономии и амбассадор традиционных вкусов.
-                            Мы пригласили французских и итальянских технологов, нашли надёжных поставщиков натуральных ингредиентов, получили все необходимые сертификаты и каждый день создаём для вас лучшие в своём роде продукты.Секрет нашего успеха – в традиционном производстве и классических технологиях. Благодаря им, мы предлагаем вам самые известные французские и итальянские сыры бескомпромиссного, международно-признанного качества.
-                            В наших лавках всегда рады и гурманам, и тем, кто хочет проверить, действительно ли гастрономия может быть искусством. В любом случае, за прилавком вас будет ждать специалист по вкусам, потому что наши продукты имеет смысл пробовать, также как о них имеет смысл говорить.
-                            Мы создали Ma Maison, чтобы жить было не только вкуснее, но и интереснее. Мы постоянно находимся в поиске новых гурмэ-впечатлений и с радостью делимся с вами этими находками. Добро пожаловать в Ma Maison, и пусть наш дом станет вашим. 
-                            Повседневная практика показывает, что укрепление и развитие структуры позволяет оценить значение систем массового участия. Равным образом постоянное информационно пропагандистское обеспечение нашей деятельности играет важную роль в формировании новых предложений. 
-                            Задача организации, в особенности же консультация с широким активом позволяет оценить значение модели развития.
-                        </p>
-                    </div>
-                    <div class="col-1"></div>
-                    <div class="col-1"></div>
-                    <div class="col-12 col-xl-10 thumbnail-row">
-                        <div class="thumbnail-block">
-                            <div class="thumbnail-img">
+                            
+                        </div>
+                    </section>
+                    <section class="section">
+                        <div class="container">
+                            <div class="section_title-wrap">
+                                <h3 class="section_title">
+                                    Откройте для себя гастрономию Ma Maison
+                                </h3>
+                                <div class="title-border section_title-border"></div>
                                 
                             </div>
-                            <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
-                        </div>
-                        <div class="thumbnail-block">
-                            <div class="thumbnail-img">
-                                
-                            </div>
-                            <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
-                        </div>
-                        <div class="thumbnail-block">
-                            <div class="thumbnail-img">
-                                
-                            </div>
-                            <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
-                        </div>
-                        <div class="thumbnail-block">
-                            <div class="thumbnail-img">
-                                
-                            </div>
-                            <p class="p thumbnail-descr">Традиционное производство и классические технологии</p>
-                        </div>
-                    </div>
-                    <div class="col-1"></div>
-                </div>
+                            <div class="row gallery-row">
+                                    <div class="gallery-item_col col-12 col-md-4">
+                                        <div class="gallery-item">
+                                            <a href="#" class="button-def gallery-link">Сыры</a>
+                                            <img class="img-fluid gallery-img" src="./uploads/category-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item_col col-12  col-md-3 flex-col">
+                                        <div class="gallery-item">
+                                                <a href="#" class="button-def gallery-link">колбаски и сосиски</a>
+                                            <img class="img-fluid gallery-img" src="./uploads/category-2.jpg" alt="">
+                                        </div>
+                                        <div class="gallery-item gallery-item-bottom">  
+                                                <a href="#" class="button-def gallery-link">шоколад</a>
+                                            <img class="img-fluid gallery-img" src="./uploads/category-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="gallery-item_col col-12 col-md-5">
+                                        <div class="gallery-item">
+                                            <a href="#" class="button-def gallery-link">Молочные деликатесы</a>
+                                            <img class="img-fluid gallery-img" src="./uploads/category-4.jpg" alt="">
+                                        </div>
+                                    </div>
                 
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="section_title-wrap">
-                    <h3 class="section_title">
-                        Откройте для себя гастрономию Ma Maison
-                    </h3>
-                    <div class="title-border section_title-border"></div>
-                    
-                </div>
-                <div class="row gallery-row">
-                        <div class="col-4">
-                            <div class="gallery-item">
-                                <a href="#" class="button-def gallery-link">Сыры</a>
-                                <img class="img-fluid" src="./uploads/category-1.jpg" alt="">
-                            </div>
+                                </div>
                         </div>
-                        <div class="col-3 flex-col">
-                            <div class="gallery-item">
-                                    <a href="#" class="button-def gallery-link">колбаски и сосиски</a>
-                                <img class="img-fluid" src="./uploads/category-2.jpg" alt="">
-                            </div>
-                            <div class="gallery-item gallery-item-bottom">  
-                                    <a href="#" class="button-def gallery-link">шоколад</a>
-                                <img class="img-fluid" src="./uploads/category-3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-5">
-                            <div class="gallery-item">
-                                <a href="#" class="button-def gallery-link">Молочные деликатесы</a>
-                                <img class="img-fluid" src="./uploads/category-4.jpg" alt="">
-                            </div>
-                        </div>
-    
-                    </div>
-            </div>
-        </section>
-        <div class="container">
-            <section class="section goods-section">
-                <div class="col-left">
-                    <div class="section_title-wrap">
-                        <h3 class="section_title">
-                                Французские и итальянские сыры
-                        </h3>
-                        <div class="title-border section_title-border"></div>
-                        
-                    </div>
-                    <div class="section_descr">
-                        <p class="p p-1">
-                                Компания МA MAISON представляет самые известные французские и итальянскиесыры собственного производства премиум класса. <br><br>
-                                Вся продукция изготовлена из 100% натурального фермерского молока при строгом соблюдении оригинальных технологий французскими и итальянскими сыроделами в России, не содержат консервантов и ГМО, имеют сертификаты соответствия гигиеническим нормам.
+                    </section>
+                    <div class="container">
+                        <section class="section goods-section">
+                            <div class="col-left">
+                                <div class="section_title-wrap">
+                                    <h3 class="section_title">
+                                            Французские и итальянские сыры
+                                    </h3>
+                                    <div class="title-border section_title-border"></div>
+                                    
+                                </div>
+                                <div class="section_descr">
+                                    <p class="p p-1">
+                                            Компания МA MAISON представляет самые известные французские и итальянскиесыры собственного производства премиум класса. <br><br>
+                                            Вся продукция изготовлена из 100% натурального фермерского молока при строгом соблюдении оригинальных технологий французскими и итальянскими сыроделами в России, не содержат консервантов и ГМО, имеют сертификаты соответствия гигиеническим нормам.
+                                            
+                                    </p>
+                                    <h6 class="article-title">Технологии приготовления<br> (или немного исторических фактов)</h6>
+                                    <p class="p p-2">
+                                        Компания МA MAISON представляет самые известные французские и итальянскиесыры собственного производства премиум класса.Вся продукция изготовлена из 100% натурального фермерского молока при строгом соблюдении оригинальных технологий французскими и итальянскими сыроделами в России, не содержат консервантов и ГМО, имеют сертификаты соответствия гигиеническим нормам. Лавки МА МAISON это европейский формат локальной лавки для постоянных покупателей с уютным легким дизайном высоким качеством и широким выбором продукции.
                                 
-                        </p>
-                        <h6 class="article-title">Технологии приготовления<br> (или немного исторических фактов)</h6>
-                        <p class="p">
-                            Компания МA MAISON представляет самые известные французские и итальянскиесыры собственного производства премиум класса.Вся продукция изготовлена из 100% натурального фермерского молока при строгом соблюдении оригинальных технологий французскими и итальянскими сыроделами в России, не содержат консервантов и ГМО, имеют сертификаты соответствия гигиеническим нормам. Лавки МА МAISON это европейский формат локальной лавки для постоянных покупателей с уютным легким дизайном высоким качеством и широким выбором продукции.
-                    
-                        </p>
-                        <div class="pag-block">
-                            <button class="pag-btn left"></button>
-                            <button class="pag-btn right"></button>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-right">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="good-item">
-                                <a href="#" class="good-item_img-wrap">
-                                    <img class="good-item_img" src="./uploads/good-1.jpg" alt="#">
-                                </a>
-                                <h6 class="good-item_title">
-                                    Булет Д’авен
-                                </h6>
-                                <div class="good-item_line"></div>
-                                <div class="good-item_price">
-                                    <p class="price">210</p>
-                                    <p class="price-descr">за 100 гр.</p>
-                                </div>
-                                <button type="button" class="button-def good-item_btn">Купить</button>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="good-item">
-                                <a href="#" class="good-item_img-wrap">
-                                    <img class="good-item_img" src="./uploads/good-2.jpg" alt="#">
-                                </a>
-                                <h6 class="good-item_title">
-                                        Буррата
-                                </h6>
-                                <div class="good-item_line"></div>
-                                <div class="good-item_price">
-                                    <p class="price">210</p>
-                                    <p class="price-descr">за 100 гр.</p>
-                                </div>
-                                <button type="button" class="button-def good-item_btn">Купить</button>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="good-item">
-                                <a href="#" class="good-item_img-wrap">
-                                    <img class="good-item_img" src="./uploads/good-3.jpg" alt="#">
-                                </a>
-                                <h6 class="good-item_title">
-                                    Бри
-                                </h6>
-                                <div class="good-item_line"></div>
-                                <div class="good-item_price">
-                                    <p class="price">210</p>
-                                    <p class="price-descr">за 100 гр.</p>
-                                </div>
-                                <button type="button" class="button-def good-item_btn">Купить</button>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="good-item">
-                                <a href="#" class="good-item_img-wrap">
-                                    <img class="good-item_img" src="./uploads/good-4.jpg" alt="#">
-                                </a>
-                                <h6 class="good-item_title">
-                                    Блё д’Овернь
-                                </h6>
-                                <div class="good-item_line"></div>
-                                <div class="good-item_price">
-                                    <p class="price">210</p>
-                                    <p class="price-descr">за 100 гр.</p>
-                                </div>
-                                <button type="button" class="button-def good-item_btn">Купить</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-        </div>
-        <section class="bonus-section">
-            <div class="col-left">
-                <div class="img-lg-wrap">
-                    <img class="img-lg" src="./uploads/bonus-1.jpg" alt="#">
-                </div>
-                <div class="bonus-event">
-                    <div class="line"></div>
-                    <h6 class="bonus-event_title">Дегустации</h6>
-                    <p class="bonus-event_descr">Каждый последний четверг месяца по адресу: Греческий, 29</p>
-                    <p class="bonus-event_time">18.00</p>
-                    <a href="#" class="button-def bonus-event_btn">Записаться</a>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <div class="col-right">
-                    <div class="bonus-item_col">
-                        <div class="bonus-item">
-                            <img class="bonus-item_img" src="./uploads/bonus-2.jpg" alt="#">
-                            <a href="#" class="button-def bonus-item_link bottom">Подарочные карты и сертификаты</a>
-                        </div>
-                    </div>
-                    <div class="bonus-item_col">
-                    
-                        <div class="bonus-item">
-                            <img class="bonus-item_img" src="./uploads/bonus-3.jpg" alt="#">
-                            <a href="#" class="button-def bonus-item_link top">Сырные тарелки</a>
-                        </div>
-                    </div>
-                    <div class="bonus-item_col">
-    
-                        <div class="bonus-item">
-                            <img class="bonus-item_img" src="./uploads/bonus-4.jpg" alt="#">
-                            <a href="#" class="button-def bonus-item_link bottom">Подарочные наборы</a>
-                        </div>
-                    </div>
-                    <div class="bonus-item_col">
-    
-                        <div class="bonus-item">
-                            <img class="bonus-item_img" src="./uploads/bonus-5.jpg" alt="#">
-                            <a href="#" class="button-def bonus-item_link top">Сырный буфет</a>
-                        </div>
-                    </div>  
-            </div>
-        </section>
-        <div class="container">
-            <section class="antology-section">
-                <div class="antology-header valign-wrap">
-                    <div class="section_title-wrap">
-                        <h3 class="section_title">
-                            Антология гурманства
-                        </h3>
-                        <div class="title-border section_title-border"></div>
-                        
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <div class="antology-item">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="antology-item_img-wrap">
-                                        <img class="antology-item_img" src="./uploads/antology-1.jpg" alt="#">
+                                    </p>
+                                    <div class="pag-block">
+                                        <button class="pag-btn left"></button>
+                                        <button class="pag-btn right"></button>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <h6 class="antology-item_title">Буллет Д'Авен</h6>
-                                    <p class="antology-item_descr">Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. </p>
-                                    <a href="#" class="antology-item_link">Читать дальше</a>
-                                </div>
+                                
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="antology-item">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="antology-item_img-wrap">
-                                        <img class="antology-item_img" src="./uploads/antology-1.jpg" alt="#">
+                            <div class="col-right">
+                                <div class="row">
+                                    <div class="good-item_col col-6">
+                                        <div class="good-item">
+                                            <a href="#" class="good-item_img-wrap">
+                                                <img class="good-item_img" src="./uploads/good-1.jpg" alt="#">
+                                            </a>
+                                            <h6 class="good-item_title">
+                                                Булет Д’авен
+                                            </h6>
+                                            <div class="good-item_line"></div>
+                                            <div class="good-item_price">
+                                                <p class="price">210</p>
+                                                <p class="price-descr">за 100 гр.</p>
+                                            </div>
+                                            <button type="button" class="button-def good-item_btn">Купить</button>
+                                        </div>
+                                    </div>
+                                    <div class="good-item_col col-6">
+                                        <div class="good-item">
+                                            <a href="#" class="good-item_img-wrap">
+                                                <img class="good-item_img" src="./uploads/good-2.jpg" alt="#">
+                                            </a>
+                                            <h6 class="good-item_title">
+                                                    Буррата
+                                            </h6>
+                                            <div class="good-item_line"></div>
+                                            <div class="good-item_price">
+                                                <p class="price">210</p>
+                                                <p class="price-descr">за 100 гр.</p>
+                                            </div>
+                                            <button type="button" class="button-def good-item_btn">Купить</button>
+                                        </div>
+                                    </div>
+                                    <div class="good-item_col col-6">
+                                        <div class="good-item">
+                                            <a href="#" class="good-item_img-wrap">
+                                                <img class="good-item_img" src="./uploads/good-3.jpg" alt="#">
+                                            </a>
+                                            <h6 class="good-item_title">
+                                                Бри
+                                            </h6>
+                                            <div class="good-item_line"></div>
+                                            <div class="good-item_price">
+                                                <p class="price">210</p>
+                                                <p class="price-descr">за 100 гр.</p>
+                                            </div>
+                                            <button type="button" class="button-def good-item_btn">Купить</button>
+                                        </div>
+                                    </div>
+                                    <div class="good-item_col col-6">
+                                        <div class="good-item">
+                                            <a href="#" class="good-item_img-wrap">
+                                                <img class="good-item_img" src="./uploads/good-4.jpg" alt="#">
+                                            </a>
+                                            <h6 class="good-item_title">
+                                                Блё д’Овернь
+                                            </h6>
+                                            <div class="good-item_line"></div>
+                                            <div class="good-item_price">
+                                                <p class="price">210</p>
+                                                <p class="price-descr">за 100 гр.</p>
+                                            </div>
+                                            <button type="button" class="button-def good-item_btn">Купить</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <h6 class="antology-item_title">Буллет Д'Авен</h6>
-                                    <p class="antology-item_descr">Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. </p>
-                                    <a href="#" class="antology-item_link">Читать дальше</a>
-                                </div>
+                                
+                            </div>
+                        </section>
+                    </div>
+                    <section class="bonus-section">
+                        <div class="col-left">
+                            <div class="img-lg-wrap">
+                                <img class="img-lg" src="./uploads/bonus-1.jpg" alt="#">
+                            </div>
+                            <div class="bonus-event">
+                                <div class="line"></div>
+                                <h6 class="bonus-event_title">Дегустации</h6>
+                                <p class="bonus-event_descr">Каждый последний четверг месяца по адресу: Греческий, 29</p>
+                                <p class="bonus-event_time">18.00</p>
+                                <a href="#" class="button-def bonus-event_btn">Записаться</a>
+                                <div class="line"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="antology-item">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="antology-item_img-wrap">
-                                        <img class="antology-item_img" src="./uploads/antology-1.jpg" alt="#">
+                        <div class="col-right">
+                                <div class="bonus-item_col">
+                                    <div class="bonus-item">
+                                        <img class="bonus-item_img" src="./uploads/bonus-2.jpg" alt="#">
+                                        <a href="#" class="button-def bonus-item_link bottom">Подарочные карты и сертификаты</a>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <h6 class="antology-item_title">Буллет Д'Авен</h6>
-                                    <p class="antology-item_descr">Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. </p>
-                                    <a href="#" class="antology-item_link">Читать дальше</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="antology-item">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="antology-item_img-wrap">
-                                        <img class="antology-item_img" src="./uploads/antology-1.jpg" alt="#">
+                                <div class="bonus-item_col">
+                                
+                                    <div class="bonus-item">
+                                        <img class="bonus-item_img" src="./uploads/bonus-3.jpg" alt="#">
+                                        <a href="#" class="button-def bonus-item_link top">Сырные тарелки</a>
                                     </div>
                                 </div>
-                                <div class="col-6">
-                                    <h6 class="antology-item_title">Буллет Д'Авен</h6>
-                                    <p class="antology-item_descr">Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. </p>
-                                    <a href="#" class="antology-item_link">Читать дальше</a>
+                                <div class="bonus-item_col">
+                
+                                    <div class="bonus-item">
+                                        <img class="bonus-item_img" src="./uploads/bonus-4.jpg" alt="#">
+                                        <a href="#" class="button-def bonus-item_link bottom">Подарочные наборы</a>
+                                    </div>
+                                </div>
+                                <div class="bonus-item_col">
+                
+                                    <div class="bonus-item">
+                                        <img class="bonus-item_img" src="./uploads/bonus-5.jpg" alt="#">
+                                        <a href="#" class="button-def bonus-item_link top">Сырный буфет</a>
+                                    </div>
+                                </div>  
+                        </div>
+                    </section>
+                    <div class="container">
+                        <section class="antology-section">
+                            <div class="antology-header valign-wrap">
+                                <div class="section_title-wrap">
+                                    <h3 class="section_title">
+                                        Антология гурманства
+                                    </h3>
+                                    <div class="title-border section_title-border"></div>
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="antology-item">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="antology-item_img-wrap">
+                                                    <img class="antology-item_img" src="./uploads/antology-1.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h6 class="antology-item_title">Буллет Д'Авен</h6>
+                                                <p class="antology-item_descr">Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. </p>
+                                                <a href="#" class="antology-item_link">Читать дальше</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="antology-item">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="antology-item_img-wrap">
+                                                    <img class="antology-item_img" src="./uploads/antology-1.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h6 class="antology-item_title">Буллет Д'Авен</h6>
+                                                <p class="antology-item_descr">Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. </p>
+                                                <a href="#" class="antology-item_link">Читать дальше</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="antology-item">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="antology-item_img-wrap">
+                                                    <img class="antology-item_img" src="./uploads/antology-1.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h6 class="antology-item_title">Буллет Д'Авен</h6>
+                                                <p class="antology-item_descr">Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. </p>
+                                                <a href="#" class="antology-item_link">Читать дальше</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="antology-item">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="antology-item_img-wrap">
+                                                    <img class="antology-item_img" src="./uploads/antology-1.jpg" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <h6 class="antology-item_title">Буллет Д'Авен</h6>
+                                                <p class="antology-item_descr">Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Равным образом консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. </p>
+                                                <a href="#" class="antology-item_link">Читать дальше</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="antology-footer">
+                                <a class="button-def" href="#">К оглавлению</a>
+                            </div>
+                        </section>
+                    </div>
+                    <section class="contact-section">
+                        <div class="container">
+                            <div class="section_title-wrap">
+                                <h3 class="section_title">
+                                    Познакомимся лично
+                                </h3>
+                                <div class="title-border section_title-border"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-col">
+                                <a href="#" class="contact-img-wrap">
+                                    <img src="./uploads/contact-1.jpg" class="contact-img" alt="#">
+                                </a>
+                            </div>
+                            <div class="contact-col">
+                                <div class="contact-info">
+                                    <div class="line"></div>
+                                    <div class="contact-info_in">
+                                        <div class="contact-info_item logo"></div>
+                                        <div class="contact-info_item map-point">
+                                            <div>
+                                                <b class="b">Лавка №1</b>
+                                                <p class="p">
+                                                    Санкт Петербург,
+                                                    Греческий, 29</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info_item clock">
+                                            <div>
+                                                <b class="b">Часы работы:</b>
+                                                <p class="p">9.00 — 18.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="contact-info_item phone">
+                                            <div>
+                                                <p class="p">+7 (812) <b class="b">330 60 77</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="map-block">
+                                    <img class="map-block_img" src="./uploads/map.jpg" alt="">
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="partners-block">
+                            <div class="container">
+                                <div class="partners-row">
+                                    <p class="p">Партнерская сеть:</p>
+                                    <a href="#" class="partners-item">
+                                        <img class="partners-item_img" src="./uploads/partners-1.png" alt="#">
+                                    </a>
+                                    <a href="#" class="partners-item">
+                                        <img class="partners-item_img" src="./uploads/partners-2.png" alt="#">
+                                    </a>
+                                    <a href="#" class="partners-item">
+                                        <img class="partners-item_img" src="./uploads/partners-1.png" alt="#">
+                                    </a>
+                                    <a href="#" class="partners-item">
+                                        <img class="partners-item_img" src="./uploads/partners-2.png" alt="#">
+                                    </a>
+                                    <a href="#" class="button-def partners-btn">Искать на карте</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="antology-footer">
-                    <a class="button-def" href="#">К оглавлению</a>
-                </div>
-            </section>
-        </div>
-        <section class="contact-section">
-            <div class="container">
-                <div class="section_title-wrap">
-                    <h3 class="section_title">
-                        Познакомимся лично
-                    </h3>
-                    <div class="title-border section_title-border"></div>
-                    
-                </div>
-            </div>
-            <div class="contact-row">
-                <div class="contact-col">
-                    <a href="#" class="contact-img-wrap">
-                        <img src="./uploads/contact-1.jpg" class="contact-img" alt="#">
-                    </a>
-                </div>
-                <div class="contact-col">
-                    <div class="contact-info">
-                        <div class="line"></div>
-                        <div class="contact-info_in">
-                            <div class="logo"></div>
-                            <div class="map-point">
-                                <div>
-                                    <b class="b">Лавка №1</b>
-                                    <p class="p">
-                                        Санкт Петербург,
-                                        Греческий, 29</p>
+                    </section>
+                    <section class="email-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-12 col-lg-5">
+                                    <div class="email-info">
+                                        Стать частью клуба и получать 
+                                        новости о специальных предложениях, 
+                                        новинках и дегустациях одним из первых
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="clock">
-                                <div>
-                                    <b class="b">Часы работы:</b>
-                                    <p class="p">9.00 — 18.00</p>
+                                <div class="col-12 col-lg-5 ">
+                                    <div class="email-form">
+                                        <input type="text" class="input" placeholder="Email">
+                                        <input type="password" class="input" placeholder="Пароль">
+                                        <label class="email-label valign-wrap">
+                                            <input type="checkbox" class="email-checkbox">
+                                            Согласен с правилами и получать рассылку
+                                        </label>
+                                        <button class="email-btn">Отправить</button>
+                                    </div>
                                 </div>
+                                <div class="col-1"></div>
                             </div>
-                            <div class="phone">
-                                <div>
-                                    <p class="p">+7 (812) <b class="b">330 60 77</b></p>
+                        </div>
+                    </section>
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6 col-md-2">
+                                    <h6 class="footer_title">О компании</h6>
+                                    <a href="#" class="footer_link">Общая информация</a>
+                                    <a href="#" class="footer_link">Вакансии</a>
+                                    <a href="#" class="footer_link">Новости</a>
+                                    <a href="#" class="footer_link">Партнерам</a>
+                                    <a href="#" class="footer_link">Франшиза</a>
+                                    <a href="#" class="footer_link">Контакты</a>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <h6 class="footer_title">Гастрономия</h6>
+                                    <a href="#" class="footer_link">Сыры</a>
+                                    <a href="#" class="footer_link">Колбаски и сосиски</a>
+                                    <a href="#" class="footer_link">Молочные деликатесы</a>
+                                    <a href="#" class="footer_link">Шоколад</a>
+                                </div>
+                                <div class="col-6 col-md-2">
+                                    <h6 class="footer_title">Покупателям</h6>
+                                    <a href="#" class="footer_link">Акции</a>
+                                    <a href="#" class="footer_link">Способы оплаты</a>
+                                    <a href="#" class="footer_link">Доставка и возврат</a>
+                                    <a href="#" class="footer_link">Подарочные карты</a>
+                                    <a href="#" class="footer_link">Где купить?</a>
+                                    <a href="#" class="footer_link">Дегустации</a>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <a href="#" class="footer_link">+7 930 757 64 87</a>
+                                    <a href="#" class="footer_link email">mmd@gmail.com</a>
+                
+                                    
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <p class="p social-icon_title">Следите за нами в соцсетях:</p>
+                                    <div class="social-icon_row">
+                                        <a href="#" class="social-icon fb"></a>
+                                        <a href="#" class="social-icon ig"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="map-block">
-                        <img class="map-block_img" src="./uploads/map.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="partners-block">
-                <div class="container">
-                    <div class="partners-row">
-                        <p class="p">Партнерская сеть:</p>
-                        <a href="#" class="partners-item">
-                            <img class="partners-item_img" src="./uploads/partners-1.png" alt="#">
-                        </a>
-                        <a href="#" class="partners-item">
-                            <img class="partners-item_img" src="./uploads/partners-2.png" alt="#">
-                        </a>
-                        <a href="#" class="partners-item">
-                            <img class="partners-item_img" src="./uploads/partners-1.png" alt="#">
-                        </a>
-                        <a href="#" class="partners-item">
-                            <img class="partners-item_img" src="./uploads/partners-2.png" alt="#">
-                        </a>
-                        <a href="#" class="button-def partners-btn">Искать на карте</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="email-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-5">
-                        <div class="email-info">
-                            Стать частью клуба и получать 
-                            новости о специальных предложениях, 
-                            новинках и дегустациях одним из первых
-                        </div>
-                    </div>
-                    <div class="col-5 email-form">
-                        <input type="text" class="input" placeholder="Email">
-                        <input type="password" class="input" placeholder="Пароль">
-                        <label class="email-label valign-wrap">
-                            <input type="checkbox" class="email-checkbox">
-                            Согласен с правилами и получать рассылку
-                        </label>
-                        <button class="email-btn">Отправить</button>
-                    </div>
-                    <div class="col-1"></div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <h6 class="footer_title">О компании</h6>
-                        <a href="#" class="footer_link">Общая информация</a>
-                        <a href="#" class="footer_link">Вакансии</a>
-                        <a href="#" class="footer_link">Новости</a>
-                        <a href="#" class="footer_link">Партнерам</a>
-                        <a href="#" class="footer_link">Франшиза</a>
-                        <a href="#" class="footer_link">Контакты</a>
-                    </div>
-                    <div class="col-2">
-                        <h6 class="footer_title">Гастрономия</h6>
-                        <a href="#" class="footer_link">Сыры</a>
-                        <a href="#" class="footer_link">Колбаски и сосиски</a>
-                        <a href="#" class="footer_link">Молочные деликатесы</a>
-                        <a href="#" class="footer_link">Шоколад</a>
-                    </div>
-                    <div class="col-2">
-                        <h6 class="footer_title">Покупателям</h6>
-                        <a href="#" class="footer_link">Акции</a>
-                        <a href="#" class="footer_link">Способы оплаты</a>
-                        <a href="#" class="footer_link">Доставка и возврат</a>
-                        <a href="#" class="footer_link">Подарочные карты</a>
-                        <a href="#" class="footer_link">Где купить?</a>
-                        <a href="#" class="footer_link">Дегустации</a>
-                    </div>
-                    <div class="col-3">
-                        <a href="#" class="footer_link">+7 930 757 64 87</a>
-                        <a href="#" class="footer_link email">mmd@gmail.com</a>
-    
-                        
-                    </div>
-                    <div class="col-3">
-                        <p class="p social-icon_title">Следите за нами в соцсетях:</p>
-                        <div class="social-icon_row">
-                            <a href="#" class="social-icon fb"></a>
-                            <a href="#" class="social-icon ig"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </main>
+                    </footer>
+        </main>
+        
     
     <!-- <button type="button" class="button-def">Купить</button> -->
-    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>    
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>  
+    <script src="vendor/jquery/jquery-ui.min.js"></script>    
+
     <script src="vendor/bootstrap-4.0.0/js/popper.min.js"></script>
     <script src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+
     <script src="vendor/slick-slider/slick.min.js"></script>
-    <script src="vendor/slideout-1.0.1/slideout.min.js"></script>
+    <script src="vendor/sidebar/jquery.simpler-sidebar.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,20 +1,4 @@
-.main-сontent{
-}
-.panel::before {
-    content: '';
-    display: block;
-    background-color: rgba(0,0,0,0);
-    transition: background-color 0.5s ease-in-out;
-}
 
-.panel-open::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
-    z-index: 99;
-}
 
 .flex-row {
     display: flex;
@@ -134,9 +118,44 @@
     }
 }
 
+
+.main-content{
+    padding-top: 100px;
+    display: block;
+    @include desktop1400{
+    padding-top: 200px;
+
+    }
+}
+
+
+.sidebar-wrapper {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar{
+    background: #fff;
+}
+
+.slick-list, .slick-track, {
+    height: 100%;
+}
+
 .main-slider{
-    height: 778px;
+    height: 400px;
     width: 100%;
+    overflow: hidden;
+    @include mobile576{
+        height: 480px;
+    }
+    @include tablet768{
+        height: 600px;
+    }
+    @include desktop992{
+        height: 778px;
+    }
     .slick-slide {
         outline: none
     }
@@ -148,24 +167,52 @@
         display: block;
         opacity: .9;
         object-fit: cover;
+        @include size(100%);
+        @include desktop992{
+            width: auto;
+        }
     }
     .slider-item_content{
         position: absolute;
-        bottom: 33px;
-        right: 60px;
+        
         width: 100%;
+        bottom: 15px;
+        right: 15px;
+        max-width: 245px;
+        @include mobile576{
+            max-width: 300px;
+            right: 20px;
+
+        }
+        @include tablet768{
+            max-width: 330px;
+            bottom: 20px;
+            right: 40px;
+        }
+        @include desktop992{
+            bottom: 33px;
+            right: 60px;
         max-width: 360px;
+
+        }
         @include desktop1400{
             right: 145px;
         }
     }
     .slick-dots{
-        margin: 25px 0 0 0;
+        margin: 10px 0 -5px;
         list-style: none;
         padding: 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        @include tablet768{
+            margin-top: 15px;
+        }
+        @include desktop992{
+            margin: 25px 0 0 0;
+
+        }
         li{
             display: inherit;
         }
@@ -174,10 +221,14 @@
             border: none;
             background: black;
             border-radius: 50%;
-            min-width: 7px;
-            height: 7px;
+            min-width: 5px;
+            height: 5px;
             margin: 0 6px;
             font-size: 0;
+            @include tablet768{
+                min-width: 7px;
+                height: 7px;
+            }
         }
     }
     .slider-card{
@@ -185,54 +236,199 @@
         flex-direction: column;
         background: #000;
         position: relative;
-        padding: 25px 43px 30px 36px;
+        padding: 10px 15px 10px 20px;
+        @include mobile576{
+            padding: 10px 30px 20px 25px;
+
+        }
+        @include tablet768{
+
+        
+        padding: 20px 43px 26px 36px;
+        }
+        @include desktop992{
+            padding: 25px 43px 30px 36px;
+
+        }
+        
         &::before{
             content: '';
             display: block;
             position: absolute;
-            top: -20px;
+            top: -12px;
             left: 0;
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 0 180px 20px 180px;
+            border-width: 0 122px 12px;
             border-color: transparent transparent #000000 transparent;
+            @include mobile576{
+                border-width: 0 150px 12px;
+
+            }
+            @include tablet768{
+            top: -15px;
+
+            border-width: 0 165px 15px;
+                
+            }
+            @include desktop992{
+                top: -20px;
+                border-width: 0 180px 20px 180px;
+
+            }
         }
     }
     .slider-card_main-title{
-        font-size: 40px;
+        
         font-weight: 500;
-        line-height: 48px;
-        margin-bottom: 22px;
+        font-size: 22px;
+        line-height: 22px;
+        @include mobile576{
+            margin-bottom: 10px;
+            font-size: 28px;
+            line-height: 30px;
+        }
+        @include tablet768{
+        font-size: 32px;
+
+            line-height: 36px;
+
+        }
+        
+        @include desktop992{
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 22px;
+        }
     }
     .slider-card_title{
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 22px;
+    line-height: 26px;
+        
         font-weight: 300;
         color: #fff;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
+        @include mobile576{
+            font-size: 26px;
+        line-height: 30px;
+        }
+        @include tablet768{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+        @include desktop992{
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
     }
     .slider-card_descr{
-        padding-bottom: 22px;
-        margin-bottom: 17px;
-        font-size: 16px;
-        line-height: 22px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 18px;
+        
         font-weight: 300;
         color: #fff;
         border-bottom: 1px solid #3a3a3a;
+        @include mobile576{
+        padding-bottom: 10px;
+
+        }
+        @include tablet768{
+        margin-bottom: 10px;
+
+        }
+        @include desktop992{
+            padding-bottom: 22px;
+            margin-bottom: 17px;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
     .slider-card_btn{
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: 0;    
+        padding: 5px 30px;
+        font-size: 14px;
+        @include mobile576{
+            padding: 8px 35px;
+
+        }
+        @include tablet768{
+            font-size: 16px;
+        }
+        @include desktop992{
+            padding: 10px 39px;
+        }
     }
     .title-border{
-        margin-bottom: 25px;
+        margin-bottom: 5px;
+        @include mobile576{
+            margin-bottom: 10px;
+
+        }
+        @include tablet768{
+            margin-bottom: 15px;
+
+        }
+        @include desktop992{
+            margin-bottom: 25px;
+
+        }
     }
     .slider-card_address{
         color: #2a1f1c;
+        font-size: 14px;
+        margin-bottom: 35px;
+        @include tablet768{
         font-size: 16px;
+        margin-bottom: 40px;
+    }
+        @include desktop992{
         margin-bottom: 75px;
+
+        }
+    }
+    .price{    
+        font-size: 34px;
+        @include mobile576{
+            font-size: 42px;
+
+        }
+        @include tablet768{
+            font-size: 48px;
+
+        }
+        @include desktop992{
+font-size: 60px;
+        }
+        &::after{
+            height: 22px;
+            margin-left: 8px;
+            background: url(../../images/ruble-icon.svg) 0/18px no-repeat;
+            @include tablet768{
+                height: 26px;
+                margin-left: 13px;
+                background-size: 22px;
+            }
+            
+            @include desktop992{
+                background-size: 25px;
+            }
+        }
+    }
+    .price-descr{
+        font-size: 14px;
+        line-height: 22px;
+        @include desktop992{
+            font-size: 16px;
+            line-height: 25px;
+        }
     }
 }
 
@@ -249,6 +445,7 @@
         display: inline-flex;
         flex-direction: row;
         align-items: flex-end;
+        word-break: break-all;
         @include desktop1400{
             font-size: 40px;
         }
@@ -290,31 +487,88 @@
         display: block;
         position: relative;
         overflow: hidden;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 300px;
+
+        
+        @include tablet768{
+            margin-bottom: 0;
+            height: 100%;
+        }
+        @include desktop992{
+            margin-bottom: 30px;
+        }
         &:hover{
             .img-fluid{
                 transform: scale(1.2);
             }
         }
         &-bottom{
-            margin-top: auto;
+            @include desktop992{
+                margin-bottom: 0;
+
+            }
         }
         .img-fluid{
             z-index: -1;
             position: relative;
             transition: .3s ease-in-out;
         }
+        &_col{
+            @media screen and (min-width: 778px) and (max-width:991px){
+               
+                max-width: 50%;
+                flex: 0 0 50%;
+                height: 300px;
+                &:nth-child(1){
+                    order: 1;
+                }
+                &:nth-child(2){
+                    order: 3;
+                    max-width: 100%;
+                    flex: auto;
+                    margin-top: 30px;
+                    flex-direction: row;
+                    .gallery-item{
+                        margin: 0 15px 0 0;
+                    }
+                    .gallery-item-bottom{
+                        margin: 0 0 0 15px;
+                    }
+                }
+                &:nth-child(3){
+                    order: 2;
+                }
+            }
+            
+        }
     }
     &-link{
         position: absolute;
         left: 0;
         bottom: 30px;
-        height: 67px;
-        line-height: 67px;
-        font-size: 14px;
-        min-width: 204px;
-        padding: 0 62px;
+        
         text-align: center;
         text-transform: uppercase;
+
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+        min-width: 165px;
+        padding: 0 18px;
+        @include desktop1400{
+            height: 67px;
+            line-height: 67px;
+            font-size: 14px;
+            min-width: 204px;
+            padding: 0 62px;
+        }
+    }
+    &-img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
     }
 }
 
@@ -327,21 +581,41 @@
 
 .goods-section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 0;
     margin-bottom: 108px;
+    @include desktop992{
+        flex-direction: row;
+        
+    }
     .col-left{
         width: 100%;
-        max-width: 780px;
         display: flex;
         flex-direction: column;
+        @include desktop992{
+        max-width: 780px;
+
+        }
+    }
+    .col-right{
+        width: 100%;
+        display: block;
+        @include desktop992{
+            max-width: 750px;
+
+        }
     }
     .section_title::before{
         margin-right: 13px;
     }
     .section_title-wrap {
-        margin-bottom: 58px;
+        margin-right: 20px;
+        margin-bottom: 25px;
         align-self: baseline;
+        @include tablet768{
+        margin-bottom: 58px;
+
+        }
     }
     .article-title {
         margin-bottom: 19px;
@@ -349,22 +623,32 @@
     .p-1{
         margin-bottom: 39px;
     }
+    .p-2{
+        margin-bottom: 20px;
+    }
+    
     .p{
         line-height: 26px;
     }
     .section_descr{
-        padding: 0 30px 0 128px;
+        padding: 0  0 0 30px;
         margin: 0;
         display: flex;
         flex-direction: column;
         height: 100%;
+        margin-bottom: 20px;
+        @include tablet768{
+            padding: 0  15px 0 30px;
+        }
+        @include desktop992{
+            margin-bottom: 0;
+
+            padding: 0 30px 0 128px;
+
+        }
     }
 
-    .col-right{
-        width: 100%;
-        max-width: 750px;
-        display: block;
-    }
+    
     .row{
         margin-bottom: -28px;
     }
@@ -374,11 +658,25 @@
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 360px;
-    padding: 10px 10px 33px;
+    max-width: 100%;
+    padding: 10px 10px 15px;
     flex-direction: column;
     border: 1px solid #e0e0e0;
-    margin-bottom: 28px;
+    margin: 0 auto 28px;
+    @include mobile480{
+    max-width: 360px;
+
+    }
+    @include desktop992{
+        padding: 10px 10px 33px;
+    }
+    &_col{
+        @media screen and (max-width: 480px) {
+            max-width: 100%;
+            flex: auto;
+        } 
+        
+    }
     &_img{
         display: block;
         object-fit: contain;
@@ -421,7 +719,11 @@
     }
     
     &_btn{
-        width: 163px;
+        width: 100%;
+        max-width: 200px;
+        @include desktop992{
+            width: 163px;
+        }
     }
 }
 
@@ -461,27 +763,45 @@
 .bonus-section{
     position: relative;
     display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    @include desktop992{
+        margin-bottom: 50px;
+        flex-direction: row;
+
+    }
     .col-left{
         display: block;
         position: relative;
-        width: 44%;
-        padding-right: 30px;
+        width: 100%;
         margin-bottom: 28px;
-        max-height: 660px;
-        
+    
+        @include desktop992{
+            width: 44%;
+            max-height: 660px;
+
+            padding-right: 30px;
+        }
     }
     .col-right{
         display: flex;
         position: relative;
-        width: 56%;
+        width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
+        @include desktop992{
+            width: 56%;
+        }
     }
     .img-lg-wrap{
         overflow: hidden;
-        height: 100%;
+        height: 300px;
+        @include tablet768{
+            height: 420px;
+        }
+        @include desktop992{
+            height: 100%;
+        }
         &:hover{
             .img-lg{
                 transform: scale(1.2);
@@ -499,18 +819,33 @@
     }
     .bonus-item_col{
         display: block;
-        width: 39%;
+        width:100%;
         margin-bottom: 28px;
+        @include mobile480{
+            width: 50%;
+            padding: 0 15px;
+        }
+        @include desktop992{
+            width: 39%;
+            padding: 0;
+        }
         &:nth-child(odd){
-            padding-right: 30px;
-            width: 61%;
+            
+            @include desktop992{
+                padding: 0 30px 0 0;
+                width:  61%;
+            }
         }
     }
     .bonus-item{
         display: block;
         position: relative;
-        height: 100%;
+        height: 300px;
+        width: 100%;
         overflow: hidden;
+        @include desktop992{
+            height: 100%;
+        }
         &:hover{
             .bonus-item_img{
                 transform: scale(1.2);
@@ -549,14 +884,19 @@
 .bonus-event{
     display: flex;
     flex-direction: column;
-    width: 360px;
-    position: absolute;
+    width: 100%;
+    position: relative;
     top: 0;
     left: 0;
     padding: 14px 10px;
     text-align: center;
     background: #000;
     color: #fff;
+    @include tablet768{
+        width: 360px;
+    position: absolute;
+
+    }
     &_title{
         font-weight: 300;
         font-size: 28px;
@@ -589,7 +929,10 @@
 }
 
 .antology-section{
-
+    margin-bottom: 30px;
+    @include desktop992{
+        margin-bottom: 0;
+    }
 }
 
 .antology-header{
@@ -611,11 +954,15 @@
 .antology-item{
     display: flex;
     flex-direction: row;
-    margin-bottom: 133px;
+    margin-bottom: 50px;
+    @include desktop992{
+        margin-bottom: 133px;
+    }
     &_img-wrap{
         display: block;
         width: 100%;
         height: 270px;
+        margin-bottom: 30px;
     }
     &_img{
         display: block;
@@ -674,11 +1021,20 @@
 }
 .contact-row{
     display: flex;
-    flex-direction: row;
-    .contact-col{
-        width: 50%;
+    flex-direction: column;
+    
+    @include desktop992{
         height: 515px;
+    flex-direction: row;
+
+    }
+    .contact-col{
+        width: 100%;
         display: block;
+        @include desktop992{
+        width: 50%;
+
+        }
     }
     .contact-img-wrap{
         display: block;
@@ -695,7 +1051,10 @@
         display: block;
         width: 100%;
         background: #000;
-        padding: 21px 32px 60px 26px;
+        padding: 21px 32px 20px 26px;
+        @include tablet768{
+            padding-bottom: 60px;
+        }
     }
     .line{
         border-top: 1px solid #fff;
@@ -710,7 +1069,11 @@
         flex-direction: row;
         align-items: flex-start;
         padding-top: 30px;
+        flex-wrap: wrap;
         justify-content: space-around;
+        @include desktop992{
+
+        }
         .b{
             color: #fff;
             font-weight: 500;
@@ -723,25 +1086,72 @@
             line-height: 22px;
         }
     }
-    .logo{
-        height: 100px;
-        width: 138px;
-        margin-top: -30px;
-        background: url(../../images/red-logo-03.svg) 0px 0px/138px 100px no-repeat;
-    }
-    .map-point{
+    .contact-info_item{
+        width: 100%;
+        margin-bottom: 25px;
         display: flex;
-        flex-direction: row;
-        width: 180px;
+            flex-direction: row;
         &::before{
             content: '';
             display: block;
-            min-width: 24px;
             margin-right: 12px;
-            height: 36px;
-            background: url(../../images/map-point-red-icon.svg) -4px 1px/32px no-repeat;
+            min-width: 38px;
+            height: 38px;
+            background-position-x: center;
+        }
+        @include tablet768{
+            margin-bottom: 0;
+            width: auto;
+            &::before{
+                background-position-x: initial;
+            }
+        }
+        &.logo{
+            height: 100px;
+            min-width: 138px;
+            margin-top: -30px;
+            background: url(../../images/red-logo-03.svg) 0px 0px/138px 100px no-repeat;
+            background-position: center 0;
+            @include desktop992{
+                background-position: 0 0;
+            }
+        }
+        &.map-point{
+            @include desktop992{
+                width: 180px;
+            }
+            &::before{
+                background: url(../../images/map-point-red-icon.svg) center/32px no-repeat;
+                @include desktop992{
+                    min-width: 24px;
+                    background-position: -4px 1px;
+                }
+            }
+        }
+        
+        &.clock{
+            &::before{
+                background: url(../../images/clock-icon.svg) center/100% no-repeat;
+                @include desktop992{
+                    min-width: 38px;
+                    background-position: 0 0;
+
+                }
+            }
+        }
+        
+        &.phone{
+            white-space: nowrap;
+            &::before{
+                background: url(../../images/phone-icon.svg) center/36px no-repeat;
+                @include desktop992{
+                    min-width: 22px;
+                    background-position: -7px 0px;
+                }
+            }
         }
     }
+    
     .map-block{
         display: block;
         max-width: 100%;
@@ -754,34 +1164,6 @@
             object-fit: cover;
         }
     }
-    .clock{
-        display: flex;
-        flex-direction: row;
-        &::before{
-            content: '';
-            display: block;
-            margin-right: 12px;
-
-            @include size(38px);
-            background: url(../../images/clock-icon.svg) 0/100% no-repeat;
-
-        }
-    }
-    
-    .phone{
-        display: flex;
-        flex-direction: row;
-        &::before{
-            content: '';
-            display: block;
-            width: 22px;
-            margin-right: 12px;
-
-            height: 36px;
-            background: url(../../images/phone-icon.svg) -7px 0px/36px no-repeat;
-
-        }
-    }
 }
 
 .partners-block{
@@ -791,28 +1173,62 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
-        padding-right: 130px;
+        padding-right: 0;
+        @include desktop992{
+            
+            flex-wrap: nowrap;
+            padding-right: 8.5%;
+        }
     }
     .p{
         font-size: 16px;
-        font-weight: 300;
+            width: 100%;
+            font-weight: 300;
+            margin-bottom: 20px;
+            text-align: center;
+            white-space: nowrap;
+        @include desktop992{
+            width: auto;
+            margin: 0;
+            text-align: left;
+        }
     }
     .partners-item{
         display: block;
-        width: 160px;
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 0 10px;
 
+        @include tablet768{
+            width: 25%;
+        }
+        @include desktop992{
+            width: 160px;
+            margin-bottom: 0;
+        
+        }
+        @include desktop1200{
+
+        }
         &_img{
             display: block;
             max-width: 100%;
             height: auto;
+            margin: 0 auto;
         }
     }
     .partners-btn{
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin: 0 auto;
+        white-space: nowrap;
         padding: 10px 31px 10px 25px;
+        @include desktop992{
+            margin: 0;
+        }
         &::before{
             content: '';
             height: 23px;
@@ -842,11 +1258,15 @@
     .email-info{
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
         font-size: 20px;
         line-height: 26px;
         color: #fff;
-        margin-top: 52px;
+        margin: 0 0 30px;
+        @include desktop992{
+            margin: 52px 0 0;
+
+        }
         &::before{
             content: '';
             position: relative;
@@ -879,6 +1299,10 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        max-width: 540px;
+        @include desktop992{
+            max-width: 100%;
+        }
     }
     .email-btn{
         background: #000;
@@ -902,6 +1326,7 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 34px;
+        white-space: nowrap;
     }
     &_link{
         font-size: 16px;
