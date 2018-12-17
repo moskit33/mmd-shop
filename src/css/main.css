@@ -1483,7 +1483,7 @@ span {
   .sidebar .close-sidebar-btn {
     width: 30px;
     height: 30px;
-    background: #76101a url(../../images/cancel-music.svg) center/100% no-repeat;
+    background: #76101a url(../images/cancel-music.svg) center/100% no-repeat;
     border: none;
     position: absolute;
     top: -65px;
@@ -1505,7 +1505,7 @@ span {
     width: 156px;
     height: 128px;
     top: -11px;
-    background: url(/src/images/cancel-music.svg) center 19px/90px no-repeat #ec2033;
+    background: url(../../images/header-logo.svg) center 19px/90px no-repeat #ec2033;
     display: block;
     border-radius: 50%;
     position: relative;
