@@ -41,6 +41,13 @@
     }
 }
 
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+
 .bold{
     font-weight: 700;
 }
@@ -120,10 +127,14 @@
 
 
 .main-content{
-    padding-top: 100px;
+    padding-top: 65px;
     display: block;
+    @include mobile576{
+        padding-top: 100px;
+
+    }
     @include desktop1400{
-    padding-top: 200px;
+        padding-top: 200px;
 
     }
 }
@@ -434,29 +445,59 @@ font-size: 60px;
 
 
 .section{
-    padding: 50px 0 50px;
+    padding: 50px 0 0;
+    @include mobile576{
+        padding: 50px 0 50px;
+
+    }
     @include desktop1400{
         padding: 83px 0 50px;
     }
     &_title{
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 500;
         color: #000;
         display: inline-flex;
         flex-direction: row;
         align-items: flex-end;
-        word-break: break-all;
+        word-break: break-word;
+        
+        @include mobile375{
+            font-size: 26px;
+
+        }
+        @include mobile480{
+        font-size: 30px;
+
+        }
+        @include desktop992{
+            font-size: 36px;
+            
+        }
         @include desktop1400{
             font-size: 40px;
         }
         &::before{
             content: '';
             display: inline-block;
-            height: 53px;
-            min-width: 53px;
+            min-width: 43px;
+    height: 38px;
+            
+            
             background: url(../../images/mmd-logo-01.svg) 0 0 no-repeat;
             position: relative;
-            margin: 0 21px 0 0;
+            margin: 0 15px 0 0;
+            @include mobile375{
+                min-width: 45px;
+                height: 45px;
+            }
+            @include mobile480{
+                margin-right: 21px;
+            }
+            @include desktop992{
+                height: 53px;
+                min-width: 53px;
+            }
         }
         &-wrap{
             display: inline-block;
@@ -583,7 +624,10 @@ font-size: 60px;
     display: flex;
     flex-direction: column;
     padding-bottom: 0;
-    margin-bottom: 108px;
+    margin-bottom: 50px;
+    @include mobile576{
+        margin-bottom: 108px;
+    }
     @include desktop992{
         flex-direction: row;
         
@@ -942,7 +986,6 @@ font-size: 60px;
     }
     .section_title{
         text-transform: uppercase;
-        font-size: 36px;
         &::before{
             margin-right: 14px;
         }
@@ -1009,7 +1052,6 @@ font-size: 60px;
     }
     .section_title{
         text-transform: uppercase;
-        font-size: 36px;
         &::before{
             margin-right: 14px;
         }
@@ -1034,6 +1076,10 @@ font-size: 60px;
         @include desktop992{
         width: 50%;
 
+        }
+        &_2{
+            display: flex;
+            flex-direction: column;
         }
     }
     .contact-img-wrap{
@@ -1071,8 +1117,12 @@ font-size: 60px;
         padding-top: 30px;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-bottom: -25px;
         @include desktop992{
 
+        }
+        @include desktop1400{
+            margin-bottom: 0;
         }
         .b{
             color: #fff;
@@ -1088,9 +1138,9 @@ font-size: 60px;
     }
     .contact-info_item{
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         display: flex;
-            flex-direction: row;
+        flex-direction: row;
         &::before{
             content: '';
             display: block;
@@ -1100,20 +1150,24 @@ font-size: 60px;
             background-position-x: center;
         }
         @include tablet768{
-            margin-bottom: 0;
             width: auto;
             &::before{
                 background-position-x: initial;
             }
         }
+        @include desktop1400{
+            margin-bottom: 0;
+
+        }
         &.logo{
             height: 100px;
-            min-width: 138px;
+            min-width: 100%;
             margin-top: -30px;
-            background: url(../../images/red-logo-03.svg) 0px 0px/138px 100px no-repeat;
-            background-position: center 0;
-            @include desktop992{
+            background: url(../../images/red-logo-03.svg) center 0/138px 100px no-repeat;
+            @include desktop1400{
                 background-position: 0 0;
+                min-width: 138px;
+
             }
         }
         &.map-point{
@@ -1155,14 +1209,18 @@ font-size: 60px;
     .map-block{
         display: block;
         max-width: 100%;
+        overflow: hidden;
+        position: relative;
         height: 293px;
-        &_img{
-            display: block;
-            position: relative;
-            width: 100%;
+        @include desktop992{
             height: 100%;
-            object-fit: cover;
+
         }
+    }
+    .map{
+        display: block;
+        @include size(100%);
+        background: url(../../uploads/map.jpg) center/cover no-repeat;
     }
 }
 
@@ -1257,12 +1315,20 @@ font-size: 60px;
     }
     .email-info{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 26px;
         color: #fff;
         margin: 0 0 30px;
+        @include mobile375{
+        flex-direction: row;
+
+        }
+        @include mobile576{
+            font-size: 20px;
+
+        }
         @include desktop992{
             margin: 52px 0 0;
 
@@ -1272,10 +1338,19 @@ font-size: 60px;
             position: relative;
             top: -3px;
             display: inline-block;
-            min-width: 100px;
-            height: 92px;
-            margin-right: 30px;
-            background: url(../../images/header-logo.svg) -27px 0/156px 156px no-repeat;
+            min-width: 80px;
+            height: 72px;
+            background: url(../../images/header-logo.svg) -27px  0/135px 120px no-repeat;
+            @include mobile375{
+                margin-right: 20px;
+
+            }
+            @include mobile576{
+                min-width: 100px;
+                height: 92px;
+                margin-right: 30px;
+                background-size: 156px;
+            }
         }
     }
     .email-label{

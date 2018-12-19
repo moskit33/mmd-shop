@@ -11,6 +11,12 @@
     }
 }
 
+@mixin mobile375{
+    @media screen and (min-width: 375px) {
+        @content;
+    }
+}
+
 @mixin mobile410 {
     @media screen and (min-width: 410px) {
         @content;
@@ -96,6 +102,11 @@
 }
 
 ;
+@mixin desktop1024 {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
 @mixin desktop1120 {
     @media screen and (min-width: 1120px) {
         @content

@@ -1,42 +1,106 @@
 
 .sidebar{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 65px);
     top: auto !important; 
+    @include mobile576{
+        height: calc(100vh - 100px);
+
+    }
+    @include desktop1400{
+        height: calc(100vh - 200px);
+
+    }
     .close-sidebar-btn{
-        width: 30px;
+        width: 25px;
         height: 30px;
         background: #76101a url(../images/cancel-music.svg) center/100% no-repeat;
         border: none;
         position: absolute;
-        top: -65px;
         left: 15px;
+        top: -48px;
+
+        @include mobile576{
+            top: -65px;
+            width: 30px;
+    
+        }
+        @include desktop1400{
+    
+        }
+    }
+    .link{
+        &:hover, &:focus, &:active{
+            color: #ec2033;
+        }
+    }
+    .sidebar-wrapper{
+
+    }
+    &_nav-link{
+        display: block;
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+        padding: 12px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    &_sub-menu{
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        padding: 0;
+        box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.4);
+        transition: height 0.35s ease;
+        &.show{
+            display: flex;
+            height: auto;
+        }
+        &_item{
+            display: block;
+            font-size: 16px;
+            color: #000;
+            font-weight: 500;
+            padding: 12px 5px 12px 40px;
+            border-bottom: 1px solid #ddd;
+        }
     }
 }
 .header{
     background: $color-red;
-    height: 100px;
+    height: 65px;
 
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 50;
+    transition: top 0.5s;
+    @include mobile576{
+    height: 100px;
+        
+    }
     @include desktop1400{
         height: 200px;
         padding: 33px 0 0; 
 
     }
     &_circle{
-        width: 156px;
-        height: 128px;
+        width: 123px;
+        height: 95px;
+        
         top: -11px;
-        background: url(../../images/header-logo.svg) center 19px/90px no-repeat #ec2033;
+        background: url(../../images/header-logo.svg) center 19px/65px no-repeat #ec2033;
         display: block;
         
         border-radius: 50%;
         position: relative;
         margin: 0 auto;
-        z-index: 5; 
+        z-index: 0; 
+        @include mobile576{
+            width: 156px;
+            height: 128px;
+            background-size: 90px;
+        }
         @include desktop1400{
             top: -5px;
             width: 258px;
@@ -56,7 +120,11 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 100px;
+        height: 65px;
+        @include mobile576{
+            height: 100px;
+            
+        }
         @include desktop1400{
             height: auto;
             align-items: flex-start;
@@ -71,65 +139,100 @@
     }
     &_nav-region{
         font-weight: 300;
-        // font-size: 14px;
-        font-size: 16px;
         line-height: 26px;
+        font-size: 0;
         color: #fff;
         border: none;
         background: transparent;
+        @include mobile420{
+            font-size: 14px;
+
+        }
+        @include desktop1024{
+            font-size: 16px;
+
+        }
         &::after{
             content: '';
             display: block;
             height: 23px;
             width: 18px;
-            margin-left: 8px;
             background: url(../../images/map-point-icon.svg) -3px 0px/24px no-repeat;
+            @include mobile420{
+                margin-left: 8px;
+
+            }
         }
     }
     &_nav-profile{
         font-weight: 300;
-        font-size: 16px;
-        // font-size: 14px;
+        font-size: 0;
 
         line-height: 26px;
         color: #fff;
         border: none;
         background: transparent;
+        @include tablet768{
+            font-size: 14px;
+        }
+        @include desktop1024{
+            font-size: 16px;
+        }
         &::after{
             content: '';
+
             display: block;
             @include size(20px);
-            margin-left: 10px;
             background: url(../../images/profile-icon.svg) 0 0px/20px no-repeat;
+            @include tablet768{
+                margin-left: 10px;
+
+            }
         }
     }
     &_nav-lang{
-    // font-size: 14px;
+        font-size: 14px;
 
         font-weight: 300;
-        font-size: 16px;
         line-height: 23px;
         padding: 0 2px 2px;
         margin-bottom: -2px;
         color: #fff;
         border: none;
-        margin-left: 35px;
         display: inline-block;
         background: transparent;
         border-bottom: 1px solid #fff;
+        @include desktop1024{
+            font-size: 16px;
+
+        }
     }
     .toggle-sidebar{
         display: block;
-        @include size(30px);
+        @include size(25px);
+
         background: transparent url(../../images/menu-three-horizontal-lines-symbol.svg) center/100% no-repeat;
         border: none;
         margin-right: 20px;
+        @include mobile576{
+            @include size(30px);
+        }
+        @include desktop1400{
+            display: none;
+        }
     }
 }
 
 .lang-block{
     display: block;
     position: relative;
+    margin-left: 15px;
+    @include tablet768{
+        margin-left: 20px;
+    }
+    @include desktop1024{
+        margin-left: 35px;
+    }
     .dropdown-menu{
         display: none;
         z-index: 50;
@@ -208,7 +311,8 @@
     
     .dropdown-menu{
         position: absolute;
-        bottom: -174px !important;
+        bottom: -208px!important;
+        transform: none !important;
         top: auto !important;
         left: 0;
         border: 1px solid #dadada;
@@ -270,40 +374,90 @@
     }
 }
 .cart-button{
-    // min-width: 116px;
-    // margin-left: 20px;
-    // height: 40px;
-    border: 1px solid #f45c6a;
-    min-width: 158px;
-    margin-left: 25px;
-    height: 57px;
+    height: 46px;
+    margin-left: 15px;
     background: transparent;
     color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
     font-weight: 500;
+    
     line-height: 26px;
-    &:hover, &:focus, &:active{
-        background: #000;
+
+
+    font-size: 0;
+    padding: 0;
+    border: none;
+    
+    @include mobile576{
+        font-size: 14px;
+        padding: 0 10px;
+        border: 1px solid #f45c6a;
+        &:hover, &:focus, &:active{
+            background: #000;
+        }
+    }
+    @include desktop1024{
+        font-size: 16px;
+        margin-left: 25px;
+        min-width: 158px;
+        height: 57px;
+
     }
     &::before{
         content: '';
         display: inline-block;
-        // width: 25px;
-        // height: 22px;
-        // background: url(../../images/shopping-cart-icon.svg) 0/23px no-repeat;
-        margin-right: 11px;
         width: 30px;
         height: 25px;
         background: url(../../images/shopping-cart-icon.svg) 0/27px no-repeat;
+    
+        @include mobile576{
+            margin-right: 11px;
+
+        }
     }
     &_index{
-        font-weight: 700;
-        font-size: 20px;
-        margin-right: 5px;
+       
+        font-weight: 500;
+        font-size: 14px;
+        margin-right: 0;
+        background: black;
+        width: 20px;
+        border-radius: 50%;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        top: 11px;
+        right: 7px;
+        @include mobile576{
+            font-weight: 700;
+            font-size: 16px;
+            margin-right: 5px;
+            position: relative;
+            top: 0;
+            left: 0;
+            line-height: 1;
+            width: auto;
+            height: auto;
+            background: transparent;
+        }
+        @include desktop1024{
+            font-size: 20px;
+        }
+    }
+    &.mobile{
+        display: flex;
+        @include desktop1400{
+            display: none;
+        }
+    }
+    &.desktop{
+        display: none;
+        @include desktop1400{
+            display: flex;
+        }
     }
 }
 .region-block{
@@ -312,22 +466,36 @@
 .region-popup{
     display: none !important;
     position: absolute;
-    bottom: -48px;
     left: 0;
+    bottom: -57px;
+    @include mobile576{
+        bottom: -73px;
+    }
+    @include desktop1400{
+        bottom: -48px;
 
+    }
     &.show{
         display: flex !important;
     }
     .region-input{
-        width: 212px;
+        width: 180px;
         height: 38px;
         padding: 0 15px;
         font-weight: 300;
         background: #fff;
-        border: none;
         font-size: 16px;
         color: #7b7b7b;
         margin-right: 9px;
+        border:  1px solid #222;
+        @include mobile375{
+            width: 212px;
+
+        }
+        @include desktop1400{
+            border: none;
+
+        }
     }
     .region-btn{
         margin-right: 9px;
