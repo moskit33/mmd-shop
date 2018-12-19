@@ -120,12 +120,6 @@
     }
 }
 
-@mixin desktop1220 {
-    @media screen and (min-width: 1200px) {
-        @content;
-    }
-}
-
 @mixin desktop1400 {
     @media screen and (min-width: 1400px) {
         @content;

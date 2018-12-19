@@ -352,7 +352,7 @@ span {
     width: 25px;
     height: 31px;
     margin-left: 13px;
-    background: url(../../images/ruble-icon.svg) 0/25px no-repeat; }
+    background: url(../images/ruble-icon.svg) 0/25px no-repeat; }
   .price-descr {
     font-size: 16px;
     color: #fff;
@@ -653,7 +653,7 @@ span {
     .main-slider .price::after {
       height: 22px;
       margin-left: 8px;
-      background: url(../../images/ruble-icon.svg) 0/18px no-repeat; }
+      background: url(../images/ruble-icon.svg) 0/18px no-repeat; }
       @media screen and (min-width: 768px) {
         .main-slider .price::after {
           height: 26px;
@@ -706,7 +706,7 @@ span {
       display: inline-block;
       min-width: 43px;
       height: 38px;
-      background: url(../../images/mmd-logo-01.svg) 0 0 no-repeat;
+      background: url(../images/mmd-logo-01.svg) 0 0 no-repeat;
       position: relative;
       margin: 0 15px 0 0; }
       @media screen and (min-width: 375px) {
@@ -931,7 +931,7 @@ span {
         width: 15px;
         height: 18px;
         margin-right: -13px;
-        background: url(../../images/ruble-black-icon.png) 0/13px no-repeat; }
+        background: url(../images/ruble-black-icon.png) 0/13px no-repeat; }
     .good-item_price .price-descr {
       color: #000;
       font-size: 14px; }
@@ -957,10 +957,10 @@ span {
     width: 65px;
     height: 65px;
     border: 1px solid #ddd;
-    background: #fff url(../../images/arrow-right.svg) center no-repeat; }
+    background: #fff url(../images/arrow-right.svg) center no-repeat; }
     .pag-block .pag-btn:hover {
       background-color: #ddd;
-      background-image: url(../../images/arrow-left.svg); }
+      background-image: url(../images/arrow-left.svg); }
     .pag-block .pag-btn.left {
       margin-right: -1px;
       transform: rotate(180deg); }
@@ -1293,7 +1293,7 @@ span {
       height: 100px;
       min-width: 100%;
       margin-top: -30px;
-      background: url(../../images/red-logo-03.svg) center 0/138px 100px no-repeat; }
+      background: url(../images/red-logo-03.svg) center 0/138px 100px no-repeat; }
       @media screen and (min-width: 1400px) {
         .contact-row .contact-info_item.logo {
           background-position: 0 0;
@@ -1302,13 +1302,13 @@ span {
       .contact-row .contact-info_item.map-point {
         width: 180px; } }
     .contact-row .contact-info_item.map-point::before {
-      background: url(../../images/map-point-red-icon.svg) center/32px no-repeat; }
+      background: url(../images/map-point-red-icon.svg) center/32px no-repeat; }
       @media screen and (min-width: 992px) {
         .contact-row .contact-info_item.map-point::before {
           min-width: 24px;
           background-position: -4px 1px; } }
     .contact-row .contact-info_item.clock::before {
-      background: url(../../images/clock-icon.svg) center/100% no-repeat; }
+      background: url(../images/clock-icon.svg) center/100% no-repeat; }
       @media screen and (min-width: 992px) {
         .contact-row .contact-info_item.clock::before {
           min-width: 38px;
@@ -1316,7 +1316,7 @@ span {
     .contact-row .contact-info_item.phone {
       white-space: nowrap; }
       .contact-row .contact-info_item.phone::before {
-        background: url(../../images/phone-icon.svg) center/36px no-repeat; }
+        background: url(../images/phone-icon.svg) center/36px no-repeat; }
         @media screen and (min-width: 992px) {
           .contact-row .contact-info_item.phone::before {
             min-width: 22px;
@@ -1334,7 +1334,7 @@ span {
     display: block;
     width: 100%;
     height: 100%;
-    background: url(../../uploads/map.jpg) center/cover no-repeat; }
+    background: url(../uploads/map.jpg) center/cover no-repeat; }
 
 .partners-block {
   background: #f4f4f4;
@@ -1404,7 +1404,7 @@ span {
       min-width: 18px;
       margin-right: 14px;
       display: inline-block;
-      background: url(../../images/map-point-icon.svg) -3px 0/24px no-repeat; }
+      background: url(../images/map-point-icon.svg) -3px 0/24px no-repeat; }
 
 .email-section {
   background: #ec2033;
@@ -1448,7 +1448,7 @@ span {
       display: inline-block;
       min-width: 80px;
       height: 72px;
-      background: url(../../images/header-logo.svg) -27px 0/135px 120px no-repeat; }
+      background: url(../images/header-logo.svg) -27px 0/135px 120px no-repeat; }
       @media screen and (min-width: 375px) {
         .email-section .email-info::before {
           margin-right: 20px; } }
@@ -1474,7 +1474,7 @@ span {
   .email-section .email-checkbox {
     display: none; }
     .email-section .email-checkbox:checked + .email-label::before {
-      background: #fff url(../../images/check-mark-sign.svg) center/73% no-repeat; }
+      background: #fff url(../images/check-mark-sign.svg) center/73% no-repeat; }
   .email-section .email-form {
     display: -ms-flexbox;
     display: flex;
@@ -1526,9 +1526,9 @@ span {
     .footer .social-icon:hover {
       background-color: #939393; }
     .footer .social-icon.fb {
-      background-image: url(../../images/facebook-logo.svg); }
+      background-image: url(../images/facebook-logo.svg); }
     .footer .social-icon.ig {
-      background-image: url(../../images/instagram-logo.svg); }
+      background-image: url(../images/instagram-logo.svg); }
     .footer .social-icon_row {
       margin-top: 14px;
       display: -ms-flexbox;
@@ -1546,14 +1546,14 @@ span {
       text-align: right; }
 
 .sidebar {
-  height: calc(100vh - 65px);
+  height: calc(100vh - $header-m);
   top: auto !important; }
   @media screen and (min-width: 576px) {
     .sidebar {
-      height: calc(100vh - 100px); } }
+      height: calc(100vh - $header-t); } }
   @media screen and (min-width: 1400px) {
     .sidebar {
-      height: calc(100vh - 200px); } }
+      height: calc(100vh - $header-d); } }
   .sidebar .close-sidebar-btn {
     width: 25px;
     height: 30px;
@@ -1615,7 +1615,7 @@ span {
     width: 123px;
     height: 95px;
     top: -11px;
-    background: url(../../images/header-logo.svg) center 19px/65px no-repeat #ec2033;
+    background: url(../images/header-logo.svg) center 19px/65px no-repeat #ec2033;
     display: block;
     border-radius: 50%;
     position: relative;
@@ -1674,7 +1674,7 @@ span {
       display: block;
       height: 23px;
       width: 18px;
-      background: url(../../images/map-point-icon.svg) -3px 0px/24px no-repeat; }
+      background: url(../images/map-point-icon.svg) -3px 0px/24px no-repeat; }
       @media screen and (min-width: 420px) {
         .header_nav-region::after {
           margin-left: 8px; } }
@@ -1696,7 +1696,7 @@ span {
       display: block;
       width: 20px;
       height: 20px;
-      background: url(../../images/profile-icon.svg) 0 0px/20px no-repeat; }
+      background: url(../images/profile-icon.svg) 0 0px/20px no-repeat; }
       @media screen and (min-width: 768px) {
         .header_nav-profile::after {
           margin-left: 10px; } }
@@ -1718,7 +1718,7 @@ span {
     display: block;
     width: 25px;
     height: 25px;
-    background: transparent url(../../images/menu-three-horizontal-lines-symbol.svg) center/100% no-repeat;
+    background: transparent url(../images/menu-three-horizontal-lines-symbol.svg) center/100% no-repeat;
     border: none;
     margin-right: 20px; }
     @media screen and (min-width: 576px) {
@@ -1862,7 +1862,7 @@ span {
     min-width: 8px;
     margin-left: 8px;
     height: 4px;
-    background: url(../../images/dropdown-arrow-02.svg) center/100% no-repeat; }
+    background: url(../images/dropdown-arrow-02.svg) center/100% no-repeat; }
   .menu-item-link:last-child::after {
     display: none; }
 
@@ -1902,7 +1902,7 @@ span {
     display: inline-block;
     width: 30px;
     height: 25px;
-    background: url(../../images/shopping-cart-icon.svg) 0/27px no-repeat; }
+    background: url(../images/shopping-cart-icon.svg) 0/27px no-repeat; }
     @media screen and (min-width: 576px) {
       .cart-button::before {
         margin-right: 11px; } }

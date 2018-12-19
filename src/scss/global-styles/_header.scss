@@ -1,13 +1,13 @@
 
 .sidebar{
-    height: calc(100vh - 65px);
+    height: calc(100vh - $header-m);
     top: auto !important; 
     @include mobile576{
-        height: calc(100vh - 100px);
+        height: calc(100vh - $header-t);
 
     }
     @include desktop1400{
-        height: calc(100vh - 200px);
+        height: calc(100vh - $header-d);
 
     }
     .close-sidebar-btn{
@@ -30,7 +30,7 @@
     }
     .link{
         &:hover, &:focus, &:active{
-            color: #ec2033;
+            color: $color-red;
         }
     }
     .sidebar-wrapper{
@@ -67,7 +67,7 @@
 }
 .header{
     background: $color-red;
-    height: 65px;
+    height: $header-m;
 
     position: fixed;
     left: 0;
@@ -76,20 +76,18 @@
     z-index: 50;
     transition: top 0.5s;
     @include mobile576{
-    height: 100px;
-        
+        height: $header-t;
     }
     @include desktop1400{
-        height: 200px;
+        height: $header-d;
         padding: 33px 0 0; 
-
     }
     &_circle{
         width: 123px;
         height: 95px;
         
         top: -11px;
-        background: url(../../images/header-logo.svg) center 19px/65px no-repeat #ec2033;
+        background: url(../images/header-logo.svg) center 19px/65px no-repeat $color-red;
         display: block;
         
         border-radius: 50%;
@@ -120,9 +118,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 65px;
+        height: $header-m;
         @include mobile576{
-            height: 100px;
+            height: $header-t;
             
         }
         @include desktop1400{
@@ -157,7 +155,7 @@
             display: block;
             height: 23px;
             width: 18px;
-            background: url(../../images/map-point-icon.svg) -3px 0px/24px no-repeat;
+            background: url(../images/map-point-icon.svg) -3px 0px/24px no-repeat;
             @include mobile420{
                 margin-left: 8px;
 
@@ -183,7 +181,7 @@
 
             display: block;
             @include size(20px);
-            background: url(../../images/profile-icon.svg) 0 0px/20px no-repeat;
+            background: url(../images/profile-icon.svg) 0 0px/20px no-repeat;
             @include tablet768{
                 margin-left: 10px;
 
@@ -211,7 +209,7 @@
         display: block;
         @include size(25px);
 
-        background: transparent url(../../images/menu-three-horizontal-lines-symbol.svg) center/100% no-repeat;
+        background: transparent url(../images/menu-three-horizontal-lines-symbol.svg) center/100% no-repeat;
         border: none;
         margin-right: 20px;
         @include mobile576{
@@ -364,7 +362,7 @@
         min-width: 8px;
         margin-left: 8px;
         height: 4px;
-        background: url(../../images/dropdown-arrow-02.svg) center/100% no-repeat;
+        background: url(../images/dropdown-arrow-02.svg) center/100% no-repeat;
     }
     &:last-child{
         
@@ -411,7 +409,7 @@
         display: inline-block;
         width: 30px;
         height: 25px;
-        background: url(../../images/shopping-cart-icon.svg) 0/27px no-repeat;
+        background: url(../images/shopping-cart-icon.svg) 0/27px no-repeat;
     
         @include mobile576{
             margin-right: 11px;
