@@ -1,13 +1,13 @@
 
 .sidebar{
-    height: calc(100vh - $header-m);
+    height: calc(100vh - 65px);
     top: auto !important; 
     @include mobile576{
-        height: calc(100vh - $header-t);
+        height: calc(100vh - 100px);
 
     }
     @include desktop1400{
-        height: calc(100vh - $header-d);
+        height: calc(100vh - 200px);
 
     }
     .close-sidebar-btn{

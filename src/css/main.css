@@ -1546,14 +1546,14 @@ span {
       text-align: right; }
 
 .sidebar {
-  height: calc(100vh - $header-m);
+  height: calc(100vh - 65px);
   top: auto !important; }
   @media screen and (min-width: 576px) {
     .sidebar {
-      height: calc(100vh - $header-t); } }
+      height: calc(100vh - 100px); } }
   @media screen and (min-width: 1400px) {
     .sidebar {
-      height: calc(100vh - $header-d); } }
+      height: calc(100vh - 200px); } }
   .sidebar .close-sidebar-btn {
     width: 25px;
     height: 30px;
