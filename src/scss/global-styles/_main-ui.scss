@@ -1353,10 +1353,12 @@ font-size: 60px;
             }
         }
     }
+
     .email-label{
         margin: 9px 0 27px;
         color: #fff;
         font-weight: 300;
+        cursor: pointer;
         font-size: 16px;
         &::before{
             content: '';
@@ -1369,6 +1371,9 @@ font-size: 60px;
     }
     .email-checkbox{
         display: none;
+        &:checked + .email-label::before{
+            background: #fff url(../../images/check-mark-sign.svg) center/73% no-repeat;
+        }
     }
     .email-form{
         display: flex;
