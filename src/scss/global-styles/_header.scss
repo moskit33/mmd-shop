@@ -24,18 +24,13 @@
             width: 30px;
     
         }
-        @include desktop1400{
-    
-        }
     }
     .link{
         &:hover, &:focus, &:active{
             color: $color-red;
         }
     }
-    .sidebar-wrapper{
 
-    }
     &_nav-link{
         display: block;
         font-size: 16px;
@@ -68,7 +63,6 @@
 .header{
     background: $color-red;
     height: $header-m;
-
     position: fixed;
     left: 0;
     top: 0;
@@ -85,11 +79,9 @@
     &_circle{
         width: 123px;
         height: 95px;
-        
         top: -11px;
         background: url(../images/header-logo.svg) center 19px/65px no-repeat $color-red;
         display: block;
-        
         border-radius: 50%;
         position: relative;
         margin: 0 auto;
@@ -128,12 +120,6 @@
             align-items: flex-start;
 
         }
-    }
-    &_nav-left{
-
-    }
-    &_nav-right{
-
     }
     &_nav-region{
         font-weight: 300;
